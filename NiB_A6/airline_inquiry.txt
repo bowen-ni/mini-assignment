@@ -1,0 +1,27 @@
+1. List of all airlines:
+"Alaska"
+"American"
+"Delta"
+"Jet Blue"
+"Southwest"
+"United"
+Command used: awk -F, 'NR > 1 {print $4}' airline_stats.csv | sort -u
+
+2a. Airlines with carrier delay greater than 10:
+"Alaska"
+"American"
+"Delta"
+"Jet Blue"
+"Southwest"
+"United"
+Command used: awk -F, 'NR > 1 && $1 > 10 {print $4}' airline_stats.csv | sort -u
+
+2b. Airlines with carrier delay greater than 15:
+"Alaska"
+"American"
+"Delta"
+"Jet Blue"
+"Southwest"
+"United"
+Command used: awk -F, -v Threshold=15 'NR > 1 && $1 > Threshold {print $4}' airline_stats.csv | sort -u
+

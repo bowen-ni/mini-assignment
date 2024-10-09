@@ -1,0 +1,4 @@
+    1  awk -F, 'NR > 1 {print $4}' airline_stats.csv | sort -u
+    2  awk -F, 'NR > 1 && $1 > 10 {print $4}' airline_stats.csv | sort -u
+    3  awk -F, -v Threshold=15 'NR > 1 && $1 > Threshold {print $4}' airline_stats.csv | sort -u
+    4  history > a6_cmds.log
