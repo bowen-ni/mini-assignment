@@ -1,0 +1,15 @@
+1. Removing Missing Values:
+   - Rows with missing values were removed to ensure data consistency.
+   - This choice prevents biases or inaccuracies that could arise from incomplete data.
+
+2. Removing Duplicate Rows:
+   - Duplicate rows are removed to prevent over-representation of specific data points.
+
+3. Handling Outliers:
+   - Outliers in the price column were identified using the 3-standard-deviation rule.
+   - Rows with prices outside this range were removed to maintain data integrity.
+
+Team Members:
+Bowen Ni
+GitHub Repository: CS131_fa24_datafiles
+
