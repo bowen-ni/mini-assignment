@@ -1,0 +1,4 @@
+0 2 * * * rm -rf /mnt/scratch/FA24_CS131_Jessica/bnifa24/mini-assignment/A9_cron/test_dir/*
+0 3 * * 0 tar -czf /mnt/scratch/FA24_CS131_Jessica/bnifa24/mini-assignment/A9_cron/backups/test_backup_$(date +\%Y\%m\%d).tar.gz /mnt/scratch/FA24_CS131_Jessica/bnifa24/mini-assignment/A9_cron/test_dir
+30 8 * * * df -h | mail -s "Disk Usage Report" bowen.ni@sjsu.com
+

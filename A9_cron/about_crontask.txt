@@ -1,0 +1,13 @@
+1. Automated Tasks:
+   - Daily File Cleanup: This job removes all files in the `test_dir` directory at 2:00 AM every day, helping to maintain a clean and organized environment.
+   - Weekly Backup: A backup of the `test_dir` directory is created every Sunday at 3:00 AM and stored in the `backups` directory. This ensures the safety of important data.
+   - Disk Usage Report: Every day at 8:30 AM, a report showing the current disk usage is emailed to bowen.ni@sjsu.com for monitoring purposes.
+
+2. Additional Tasks Benefiting from Automation:
+   - Rotating and archiving system logs regularly to manage disk space more efficiently.
+   - Automatically restarting failed services to ensure system stability.
+
+3. Potential Risks and Mitigation:
+   - Risk of losing important data during backups: To address this, backups include timestamps in the filenames to prevent accidental overwrites.
+   - Risk of high system resource usage or unexpected behavior: Thoroughly test cron jobs before deployment and monitor their impact on system performance.
+
